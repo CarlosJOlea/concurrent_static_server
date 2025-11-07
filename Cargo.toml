@@ -1,0 +1,17 @@
+[package]
+name = "concurrent_static_server"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+serde_json = "1.0.145"
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
+
+[dev-dependencies]
+tempfile = "3"
+portpicker = "0.1"
+
